@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="content"></div>
+<script src="./js/jquery.js"></script>
+<script>
+    $(document).ready(function () {
+        $.ajax(
+            {
+                type: "GET",
+                url:"http://jsonplaceholder.typicode.com/posts/1",
+                dataType:"json",
+                success: function(res){
+                    $("#content").append("<p>"+res.title+"</p>");
+                }
+            }
+        )
+    });
+    $.ajax(
+        {
+            type: "GET",
+            url:"http://jsonplaceholder.typicode.com/posts",
+            dataType:"json",
+            success: function(res){
+                let count= res.length;
+                for(i=0;i<count;i++){
+                    $("#content").append("<p>"+res[i].title+"</p>");
+                }
+            }
+        }
+    );
+
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<nav id="header" class="navbar navbar-expand py-4 navTop fontParastoo">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown" >
+        <ul class="navbar-nav mx-auto" >
+            <li class="nav-item ">
+                <a  href="index.php" class=" <?php if($current == 'home'){echo 'active';} ?> nav-link"> صفحه اصلی <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    محصولات
+                </a>
+                <div class="dropdown-menu mega-menu "aria-labelledby="navbarDropdownMenuLink">
+                    <div class="row">
+                        <div class="col-md-4 mega">
+                            <h3><a id="mk" class="dropdown-item  py-2 ml-md-3 text-center" href="#">مایکل کورس</a></h3>
+                            <h3><a id="tacs" class="dropdown-item  py-2 ml-md-3 text-center" href="#">تکس</a></h3>
+                            <h3><a id="diesel" class="dropdown-item  py-2 ml-md-3 text-center" href="#">دیزل</a></h3>
+
+                        </div>
+                        <div class="col-md-4 mega">
+                            <img id="megImage" class="col-md-12" src="assets/img/disel-watch.jpg">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">درباره ما</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">تماس با ما</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    دسته بندی
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">مردانه</a>
+                    <a class="dropdown-item" href="#">زنانه</a>
+                    <a class="dropdown-item" href="#">اسپرت</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+</body>
+</html>

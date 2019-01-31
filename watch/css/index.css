@@ -1,0 +1,96 @@
+* {
+direction: rtl;
+box-sizing: border-box;
+}
+
+.carImg{
+    height: 90vh;
+}
+@font-face {
+    font-family: yekan;
+    src: url("http://localhost/watch/assets/fonts/Yekan.ttf");
+}
+@font-face {
+    font-family: parastoo;
+    src: url("http://localhost/watch/assets/fonts/Parastoo-Bold-FD.ttf");
+}
+
+@font-face {
+    font-family: vazir;
+    src: url("http://localhost/watch/assets/fonts/Vazir-Light-FD.ttf");
+}
+
+.fontYekan{
+    font-family: yekan;
+}
+.fontParastoo{
+    font-family: parastoo;
+}
+.fontVazir{
+    font-family: vazir;
+}
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.form{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    }
+.brand-title{
+
+    font-size: 3rem;
+}
+.brand{
+    font-size: 2rem;
+}
+.head{
+    background-color: rgba(255, 5, 15, 0.6) !important;
+ }
+.mega-menu{
+    width: 70vw;
+    right: -25vw;
+    border-radius: .5rem ;
+}
+.mega-menu a{
+    color: black!important;
+}
+.mega a:hover{
+     background-color: rgba(17, 19, 156, 0.27);
+    border-radius: .5rem;
+ }
+
+.navTop{
+   background-color: #000;
+    padding: 0 10px;
+}
+.navTop a{
+    color: black;
+    display: block;
+}
+.navTop a:hover{
+    background-color: #11139c;;
+}
+h1{
+    font-family: "Cooper Black";
+    color: #11139c;
+}
+.theme{
+     background-color: #11139c;
+ }
+.textTheme{
+color: #11139c;
+    font-weight: bold;
+}
+.themeLight{
+    background-color: rgba(17, 19, 156, 0.27);
+}
+.main-menu{
+    height: 50px;
+    padding-top: 0;
+    margin-top: 0;
+}
